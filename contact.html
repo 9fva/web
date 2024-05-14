@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Furniture </title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0fff7;
+            border-radius: 5px;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        form {
+            display: grid;
+            gap: 20px;
+        }
+        
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+        }
+        
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #248277;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <a href="#" class="logo"> furni</a>
+        </div>
+        <div class="header-main">
+            <nav class="navbar">
+                <a href="home.html">home</a>
+                <a href="about.html">about</a>
+                <a href="contact.html">Contact</a>
+                <a href="product.html">product</a>
+                <a href="member.html">member</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container" style="margin-top: 50px;">
+        <h1>Contact Us </h1>
+        <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Your Name" required pattern="[A-Za-z\s]+">
+            <input type="email" id="email" name="email" placeholder="Your Email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <script>
+        function validateEmail() {
+            var emailInput = document.getElementById('email');
+            var email = emailInput.value.trim();
+
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (emailRegex.test(email)) {
+                alert('Email is valid.');
+                emailInput.value = '';
+                return true;
+            } else {
+                alert('Please enter a valid email.');
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

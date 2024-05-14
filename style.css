@@ -1,0 +1,124 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+section {
+    padding: 2rem 7%;
+}
+
+.heading {
+    font-size: 4rem;
+    color: #222;
+    padding-bottom: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .9rem 3rem;
+    border-radius: .5rem;
+    color: #248277;
+    border: .1rem solid #248277;
+    background: none;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.header-top {
+    background: #248277;
+    padding: 1.4rem 7%;
+    border-bottom: .1rem solid #eee;
+}
+
+.header-top .logo {
+    color: #f0f8f7;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.header-top .logo i {
+    padding-right: .5rem;
+    color: #222;
+}
+
+.header-main {
+    padding: 2rem 7%;
+    background: #f0f8f7;
+    position: relative;
+}
+
+.header-main .navbar a {
+    margin: 0 1rem;
+    font-size: 2rem;
+    color: #222;
+}
+
+.home {
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+}
+
+.home .content {
+    max-width: 55rem;
+}
+
+.home .content h3 {
+    font-size: 6rem;
+    color: #248277;
+}
+
+.home .content p {
+    font-size: 1.5rem;
+    line-height: 2;
+    color: #777;
+    padding: 1rem 0;
+}
+
+.about .row .content h3 {
+    font-size: 3.5rem;
+    color: #248277;
+    text-transform: uppercase;
+}
+
+.about .row .content p {
+    font-size: 1.6rem;
+    margin: .5rem 0;
+    color: #777;
+    line-height: 2;
+}
+
+.product .box-container {
+    text-align: center;
+}
+
+.product .box-container .box {
+    display: inline-block;
+    width: 30%;
+    margin-right: 2%;
+    background-color: #f1f1f1;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.product .box-container .box .card-content h3 {
+    color: #248277;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.product .box-container .box .price-wrapper {
+    font-size: 1.5rem;
+    margin: .8rem 0;
+}
